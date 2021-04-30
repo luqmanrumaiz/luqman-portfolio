@@ -4,11 +4,20 @@ function App() {
 
     return (
         <div className="App">
-            <div className="header" id="myHeader">
-                <h1 data-heading="L" className="name_title">uqman</h1>
-            </div>
+            <nav>
+                <div className="logo">
+                    <h1 data-heading="L" className="name_title">uqman</h1>
+                </div>
+                <div className="nav-links">
+                    <ul>
+                        <li><img src="../images/linkedin.png" alt=""/></li>
+                        <li><img src="../images/facebook.png" alt=""/></li>
+                        <li><img src="../images/instagram-logo.png" alt=""/></li>
+                    </ul>
+                </div>
+            </nav>
 
-            <div id="page">
+            <div>
                 <div id="layerSun">
                     <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/sun.svg"/>
                 </div>

@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #fedcc8;
+  background: #000;
   scroll-behavior: smooth;
 }
 
@@ -118,8 +118,18 @@ a {
   font-family: Raleway;
 }
 
-.name_title:before {
+@font-face {
   font-family: "Halogen";
+  src: url("./fonts/RunMedium.ttf");
+}
+
+.name_title {
+  font-family: "Halogen";
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+.name_title:before {
   content: attr(data-heading);
   color: rgba(223, 248, 96, 0.87);
   animation: flicker 5s linear infinite;
@@ -131,9 +141,46 @@ a {
 
 .header {
   padding: 10px 16px;
-  background: #555;
+  background: transparent;
   color: #f1f1f1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
 }
+
+nav {
+  position: fixed;
+  z-index: 100;
+  height: 8vh;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav .nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-links ul li {
+  padding: 0 4px;
+  list-style: none;
+}
+
+nav .nav-links ul li img {
+  transform: scale(0.45);
+}
+
 
 .sticky {
   position: fixed;
@@ -165,7 +212,3 @@ a {
   }
 }
 
-@font-face {
-  font-family: "Halogen";
-  src: url("./fonts/Halogen.otf");
-}
