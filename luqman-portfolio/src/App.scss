@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fedcc8;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+}
+
+#layerSun {
+  position: fixed;
+  top: 50px;
+}
+
+#layerClouds {
+  position: fixed;
+  top: 50px;
+  z-index: -1;
+  animation: moveClouds 20s infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-1800px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+#overlay {
+  background: darkred;
+  opacity: 0;
+  z-index: 6;
+}
+
+#container {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: -00px;
+}
+
+.layer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+}
+.layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#layer0 {
+  transform: translateZ(-300px) scale(7);
+  z-index: 0;
+}
+#layer1 {
+  transform: translateZ(-250px) scale(5);
+  z-index: 1;
+}
+#layer2 {
+  transform: translateZ(-200px) scale(5);
+  z-index: 2;
+}
+#layer3 {
+  transform: translateZ(-150px) scale(3);
+  z-index: 3;
+}
+#layer4 {
+  transform: translateZ(-100px) scale(3);
+  z-index: 4;
+}
+#layer5 {
+  transform: translateZ(-50px) scale(1.5);
+  z-index: 5;
+}
+#layer6 {
+  transform: translateZ(0px) scale(1);
+  z-index: 6;
+}
+#layerBalloon {
+  transform: translateZ(50px) scale(0.2) translateY(700px);
+  z-index: 1;
+}
+
+.content {
+  background: black;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 200vh;
+  z-index: 30;
+  text-align: center;
+}
+
+.content h1 {
+  padding-top: 100vh;
+  font-family: Raleway;
+}
+
+.name_title:before {
+  font-family: "Halogen";
+  content: attr(data-heading);
+  color: rgba(223, 248, 96, 0.87);
+  animation: flicker 5s linear infinite;
+}
+
+.content {
+  padding: 16px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #page {
+  padding-top: 102px;
+}
+
+#page {
+  position: relative;
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, .4),
+    1px -1px 0 rgba(255, 255, 255, .4),
+    -1px 1px 0 rgba(255, 255, 255, .4),
+    1px 1px 0 rgba(255, 255, 255, .4),
+    0 -2px 8px, 0 0 2px,
+    0 0 5px #fffc3d;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@font-face {
+  font-family: "Halogen";
+  src: url("./fonts/Halogen.otf");
+}
