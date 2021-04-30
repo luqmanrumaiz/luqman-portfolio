@@ -10,9 +10,9 @@ function App() {
                 </div>
                 <div className="nav-links">
                     <ul>
-                        <li><img src="../images/linkedin.png" alt=""/></li>
-                        <li><img src="../images/facebook.png" alt=""/></li>
-                        <li><img src="../images/instagram-logo.png" alt=""/></li>
+                        <li><img src="../images/github.svg" alt=""/></li>
+                        <li><img src="../images/behance.svg" alt=""/></li>
+                        <li><img src="../images/twitter.svg" alt=""/></li>
                     </ul>
                 </div>
             </nav>
@@ -59,23 +59,11 @@ function App() {
     );
 }
 
-function myFunction() {
-    const header = document.getElementById("myHeader");
-    const sticky = header.offsetTop;
-
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
-
 window.onscroll = function() {
     //console.log(document.getElementById("container").offsetHeight);
     const height = document.getElementById("container").offsetHeight;
     const scroll = document.getElementById("container").scrollTop
     const opacity = 1 - ((height-scroll)/height);
-    myFunction();
     console.log(opacity); document.getElementById("overlay").style.opacity = opacity;
 }
 

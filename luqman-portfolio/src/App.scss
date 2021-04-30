@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #000;
+  background: #ffa8a8;
   scroll-behavior: smooth;
 }
 
@@ -154,7 +154,7 @@ nav {
   position: fixed;
   z-index: 100;
   height: 8vh;
-  width: 96%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,27 +173,12 @@ nav .nav-links ul {
 }
 
 nav .nav-links ul li {
-  padding: 0 4px;
+  padding:  10px;
   list-style: none;
 }
 
 nav .nav-links ul li img {
   transform: scale(0.45);
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + #page {
-  padding-top: 102px;
-}
-
-#page {
-  position: relative;
 }
 
 @keyframes flicker {
