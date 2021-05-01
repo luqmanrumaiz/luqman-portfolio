@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #2c3e50;
+  background: #2c2c2c;
   scroll-behavior: smooth;
   font-family: "Poppins SemiBold";
 }
@@ -36,11 +36,6 @@ a {
   }
 }
 
-#overlay {
-  background: darkred;
-  opacity: 0;
-  z-index: 6;
-}
 
 #container {
   perspective: 100px;
@@ -77,8 +72,11 @@ a {
   z-index: 1;
   text-align: center;
   color: white;
+  top: 20%;
   font-size: 18px;
+  mix-blend-mode: exclusion;
 }
+
 #layer2 {
   transform: translateZ(-200px) scale(5);
   z-index: 2;
@@ -103,6 +101,7 @@ a {
 #layer6 img {
   position:fixed;
   left:0;
+  bottom: -1%;
   width:100%;
 }
 
@@ -112,7 +111,7 @@ a {
 }
 
 .content {
-  background: #2c3e50;
+  background: #d6d6d6;
   color: white;
   display: block;
   position: absolute;
@@ -134,15 +133,16 @@ a {
   src: url("./fonts/Federant.ttf");
 }
 
-.name_title {
+#name_title {
   font-family: "Federant";
   letter-spacing: 5px;
-  font-size: 32px;
+  color: #fff;
+  font-size: 26px;
 }
 
-.name_title:before {
+#name_title:before {
   content: attr(data-heading);
-  color: red;
+  color: #ff5a5a;
   animation: flicker 5s linear infinite;
 }
 
@@ -174,11 +174,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 30px 30px;
-}
-
-.logo {
-  color: #fff;
-  font-size: 26px;
+  mix-blend-mode: exclusion;
 }
 
 nav .nav-links ul {
