@@ -6,8 +6,9 @@
 
 html,
 body {
-  background: #ffa8a8;
+  background: #2c3e50;
   scroll-behavior: smooth;
+  font-family: "Poppins SemiBold";
 }
 
 a {
@@ -72,8 +73,11 @@ a {
   z-index: 0;
 }
 #layer1 {
-  transform: translateZ(-250px) scale(5);
+  transform: translateZ(-500px) scale(5);
   z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }
 #layer2 {
   transform: translateZ(-200px) scale(5);
@@ -95,13 +99,20 @@ a {
   transform: translateZ(0px) scale(1);
   z-index: 6;
 }
+
+#layer6 img {
+  position:fixed;
+  left:0;
+  width:100%;
+}
+
 #layerBalloon {
   transform: translateZ(50px) scale(0.2) translateY(700px);
   z-index: 1;
 }
 
 .content {
-  background: black;
+  background: #2c3e50;
   color: white;
   display: block;
   position: absolute;
@@ -119,20 +130,24 @@ a {
 }
 
 @font-face {
-  font-family: "Halogen";
-  src: url("./fonts/RunMedium.ttf");
+  font-family: "Federant";
+  src: url("./fonts/Federant.ttf");
 }
 
 .name_title {
-  font-family: "Halogen";
+  font-family: "Federant";
   letter-spacing: 5px;
-  font-size: 14px;
+  font-size: 32px;
 }
 
 .name_title:before {
   content: attr(data-heading);
-  color: rgba(223, 248, 96, 0.87);
+  color: red;
   animation: flicker 5s linear infinite;
+}
+
+#red {
+  color: #ff5a5a;
 }
 
 .content {
@@ -163,8 +178,7 @@ nav {
 
 .logo {
   color: #fff;
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 26px;
 }
 
 nav .nav-links ul {
@@ -184,12 +198,7 @@ nav .nav-links ul li img {
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, .4),
-    1px -1px 0 rgba(255, 255, 255, .4),
-    -1px 1px 0 rgba(255, 255, 255, .4),
-    1px 1px 0 rgba(255, 255, 255, .4),
-    0 -2px 8px, 0 0 2px,
-    0 0 5px #fffc3d;
+    text-shadow: 0 0 5px red;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;

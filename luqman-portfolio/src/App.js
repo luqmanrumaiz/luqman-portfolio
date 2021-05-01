@@ -18,38 +18,17 @@ function App() {
             </nav>
 
             <div>
-                <div id="layerSun">
-                    <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/sun.svg"/>
-                </div>
-                <div id="layerClouds">
-                    <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/clouds.svg"/>
-                </div>
                 <div id="container">
                     <div id="parallax">
-                        <div className="layer" id="overlay">
+                      
+                        <div className="layer" id="layer1">
+                            <h1>Hey I am Luqman Rumaiz <span id="red">Welcome to My Portfolio</span></h1>
                         </div>
-                        <div className="layer" id="layer0">
-                            <img src=""/>
-                        </div>
-                        <div className="layer" id="layer1"><img
-                            src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/1.svg"/></div>
-                        <div className="layer" id="layer2"><img
-                            src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/2.svg"/></div>
-                        <div className="layer" id="layer3">
-                            <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/3.svg"/>
-                        </div>
-                        <div className="layer" id="layer4">
-                            <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/4.svg"/>
-                        </div>
-                        <div className="layer" id="layer5">
-                            <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/5.svg"/>
-                        </div>
+
                         <div className="layer" id="layer6">
-                            <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/6.svg"/>
+                            <img src="../images/castle-bg.svg"/>
                         </div>
-                        <div className="layer" id="layerBalloon">
-                            <img src="https://www.lukw4l.de/utils/media/assets/monochromaticLandscape/balloon.svg"/>
-                        </div>
+
                     </div>
                     <div className="content">
                     </div>
