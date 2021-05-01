@@ -139,19 +139,20 @@ a {
 
 #name_title {
   font-family: "Federant";
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   color: #fff;
   font-size: 26px;
+  -webkit-font-smoothing: antialiased;
 }
 
 #name_title:before {
   content: attr(data-heading);
-  color: #ff5a5a;
+  color: #2ec272;
   animation: flicker 5s linear infinite;
 }
 
 #red {
-  color: #ff5a5a;
+  color: #2ec272;
 }
 
 .content {
@@ -195,10 +196,43 @@ nav .nav-links ul li img {
   transform: scale(0.45);
 }
 
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow-x: hidden;
+  mix-blend-mode: difference;
+}
+
+#innernav{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d6d6d6;
+  display: block;
+  transition:  0.5s;
+}
+
+.sidenav a:hover {
+  font-size: 50px;
+}
+
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: 0.99;
-    text-shadow: 0 0 5px red;
+    text-shadow: 0 0 5px #2ec272;
   }
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;
