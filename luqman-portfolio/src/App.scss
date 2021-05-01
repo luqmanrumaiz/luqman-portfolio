@@ -2,7 +2,11 @@
 
 * {
   box-sizing: border-box;
+  ::selection {
+    background: red;
+  }
 }
+
 
 html,
 body {
