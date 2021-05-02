@@ -2,9 +2,9 @@
 
 * {
   box-sizing: border-box;
-  ::selection {
-    background: red;
-  }
+::selection {
+  background: red;
+}
 }
 
 
@@ -20,28 +20,6 @@ body {
 a {
   color: white;
 }
-
-#layerSun {
-  position: fixed;
-  top: 50px;
-}
-
-#layerClouds {
-  position: fixed;
-  top: 50px;
-  z-index: -1;
-  animation: moveClouds 20s infinite;
-}
-
-@keyframes moveClouds {
-  0% {
-    transform: translateX(-1800px);
-  }
-  100% {
-    transform: translateX(2000px);
-  }
-}
-
 
 #container {
   perspective: 100px;
@@ -69,10 +47,6 @@ a {
   bottom: 0;
 }
 
-#layer0 {
-  transform: translateZ(-300px) scale(7);
-  z-index: 0;
-}
 #layer1 {
   transform: translateZ(-500px) scale(5);
   z-index: 1;
@@ -83,22 +57,6 @@ a {
   mix-blend-mode: exclusion;
 }
 
-#layer2 {
-  transform: translateZ(-200px) scale(5);
-  z-index: 2;
-}
-#layer3 {
-  transform: translateZ(-150px) scale(3);
-  z-index: 3;
-}
-#layer4 {
-  transform: translateZ(-100px) scale(3);
-  z-index: 4;
-}
-#layer5 {
-  transform: translateZ(-50px) scale(1.5);
-  z-index: 5;
-}
 #layer6 {
   transform: translateZ(0px) scale(1);
   z-index: 6;
@@ -109,11 +67,6 @@ a {
   left:0;
   bottom: -1%;
   width:100%;
-}
-
-#layerBalloon {
-  transform: translateZ(50px) scale(0.2) translateY(700px);
-  z-index: 1;
 }
 
 .content {
@@ -127,11 +80,6 @@ a {
   height: 200vh;
   z-index: 30;
   text-align: center;
-}
-
-.content h1 {
-  padding-top: 100vh;
-  font-family: Raleway;
 }
 
 @font-face {
@@ -223,7 +171,7 @@ nav .nav-links ul li img {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #d6d6d6;
+  color: #cbcbcb;
   display: block;
   transition:  0.5s;
 }
