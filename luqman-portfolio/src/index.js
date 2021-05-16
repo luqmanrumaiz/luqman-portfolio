@@ -46,7 +46,7 @@ class App extends React.Component {
                         </div>
 
                         <div className="layer" id="layer6">
-                            <img src="../images/castle-bg.svg"/>
+                            <img src="../images/triangle-mountain-bg.svg"/>
                         </div>
                     </div>
 
