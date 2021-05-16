@@ -52,7 +52,7 @@ class App extends React.Component {
 
                     <div className="content">
                         <iframe src='https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/'
-                                frameBorder='0' width='100%' height='100%'></iframe>
+                                frameBorder='0' width='100%' height='90%'></iframe>
                     </div>
                 </div>
             </div>
