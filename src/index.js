@@ -37,7 +37,7 @@ class App extends React.Component {
                     </div>
                 </div>
 
-                <div id="container">
+                <div id="background">
 
                     <div className="parallax">
 
@@ -51,14 +51,27 @@ class App extends React.Component {
                     </div>
 
                     <div className="content">
-                    
-                        <div id="effect">
-                            <div id="inner"></div>
+                        <div>
+                            <h2 class="divider line glow">About-<span className="purple"> Me</span></h2>
+
+                            <div class="container">
+                                <div class="container__image">
+                                    
+                                    <div class="container__info">
+                                        <p>Hi! I'm Luqman Rumaiz a 17 year old Computer Science Undergraduate at the University of Westminster. I live in Colombo and aspire to be a Full Stack. Oh and I know a bit of Machine Learning :) </p>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
 
-                        <h1>Skills & <span className="purple">Technologies</span></h1>
-                        <iframe src='https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/'
-    frameBorder='0' width='100%' height="315"/>
+
+                        <div>
+                            <h2 class="divider line glow top-margin">Skills-<span className="purple"> Technologies</span></h2>
+                            <div class="container1"> 
+                                <iframe class="responsive-iframe" src='https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/'/>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
