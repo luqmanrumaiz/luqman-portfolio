@@ -134,6 +134,9 @@ a {
 }
 
 nav {
+  left: 0;
+  top: 0;
+  z-index: 1;
   position: fixed;
   z-index: 100;
   height: 8vh;
@@ -143,6 +146,12 @@ nav {
   align-items: center;
   padding: 30px 30px;
   mix-blend-mode: exclusion;
+  mask: linear-gradient(black 7rem, transparent);
+  -webkit-mask: linear-gradient(black 7rem, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: none;
+  touch-action: none;
 }
 
 nav .nav-links ul {
