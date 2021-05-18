@@ -51,9 +51,14 @@ class App extends React.Component {
                     </div>
 
                     <div className="content">
-                        <h1>  _    Skills <span className="purple"> _        Technologies</span></h1>
+                    
+                        <div id="effect">
+                            <div id="inner"></div>
+                        </div>
+
+                        <h1>Skills & <span className="purple">Technologies</span></h1>
                         <iframe src='https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/'
-    frameBorder='0' width='100%' height='100%'/>
+    frameBorder='0' width='100%' height="315"/>
                     </div>
                 </div>
             </div>
