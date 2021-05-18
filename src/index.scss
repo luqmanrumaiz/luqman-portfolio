@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
 * {
   box-sizing: border-box;
-::selection {
-  background: red;
+  ::selection {
+    background: red;
+  }
 }
-}
-
 
 html {
   scroll-behavior: smooth;
@@ -41,10 +38,14 @@ a {
   left: 0;
   height: 100vh;
 }
+
 .layer img {
   display: block;
   position: absolute;
   bottom: 0;
+  -moz-box-shadow: 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #ff0000;
 }
 
 #layer1 {
@@ -63,10 +64,10 @@ a {
 }
 
 #layer6 img {
-  position:fixed;
-  left:0;
+  position: fixed;
+  left: 0;
   bottom: -1%;
-  width:100%;
+  width: 100%;
 }
 
 .content {
@@ -77,9 +78,26 @@ a {
   top: 100%;
   left: 0;
   right: 0;
-  height: 200vh;
+  height: 100vh;
   z-index: 30;
   text-align: center;
+
+  h1 {
+    color: #2c2c2c;
+    width: 50px;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    margin: -25px 70px 0 -25px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
+}
+
+.purple {
+  color: purple;
 }
 
 @font-face {
@@ -91,7 +109,6 @@ a {
   font-family: "Federant";
   letter-spacing: 1px;
   color: #fff;
-  font-size: 26px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -105,17 +122,13 @@ a {
   color: #2ec272;
 }
 
-.content {
-  padding: 16px;
-}
-
 .header {
   padding: 10px 16px;
   background: transparent;
   color: #f1f1f1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=80);
-  -moz-opacity: 0.80;
+  -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
   opacity: 0.8;
 }
@@ -138,7 +151,7 @@ nav .nav-links ul {
 }
 
 nav .nav-links ul li {
-  padding:  10px;
+  padding: 10px;
   list-style: none;
 }
 
@@ -159,7 +172,7 @@ nav .nav-links ul li img {
   mix-blend-mode: difference;
 }
 
-#innernav{
+#innernav {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -173,7 +186,7 @@ nav .nav-links ul li img {
   font-size: 25px;
   color: #cbcbcb;
   display: block;
-  transition:  0.5s;
+  transition: 0.5s;
 }
 
 .sidenav a:hover {
@@ -181,13 +194,30 @@ nav .nav-links ul li img {
 }
 
 @keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
     opacity: 0.99;
     text-shadow: 0 0 5px #2ec272;
   }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
     opacity: 0.4;
     text-shadow: none;
   }
 }
 
+iframe {
+  float: right;
+  width: 70%;
+  margin-top: 50px;
+}
