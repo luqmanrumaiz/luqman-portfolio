@@ -30,7 +30,19 @@ a {
   margin-left: -00px;
 }
 
+#layer1 {
+  transform: translateZ(-500px) scale(5);
+  z-index: 1;
+  text-align: center;
+  color: white;
+  top: 10%;
+  font-size: 16px;
+  mix-blend-mode: exclusion;
+}
+
 .layer {
+  animation: bounceInDown 2s ease 0s 1 normal forwards;
+
   position: absolute;
   right: 0;
   bottom: 0;
@@ -42,19 +54,6 @@ a {
   display: block;
   position: absolute;
   bottom: 0;
-  -moz-box-shadow: 0 0 5px #fff;
-  -webkit-box-shadow: 0 0 5px #fff;
-  box-shadow: 0 0 5px #ff0000;
-}
-
-#layer1 {
-  transform: translateZ(-500px) scale(5);
-  z-index: 1;
-  text-align: center;
-  color: white;
-  top: 20%;
-  font-size: 18px;
-  mix-blend-mode: exclusion;
 }
 
 #layer6 {
