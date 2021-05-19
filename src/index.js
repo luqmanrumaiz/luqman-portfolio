@@ -61,7 +61,15 @@ class App extends React.Component {
                                         <p>Hi! I'm Luqman Rumaiz a 17 year old Computer Science Undergraduate at the University of Westminster. I live in Colombo and aspire to be a Full Stack. Oh and I know a bit of Machine Learning :) </p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>                    
+
+                            <div id="cv-div">
+
+                                <a class="white" href="#">
+                                    <p><span class="bg"></span><span class="base"></span><span class="text">Download CV</span></p>
+                                </a>
+
+                            </div>        
                         </div>
 
 

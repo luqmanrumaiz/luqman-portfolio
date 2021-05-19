@@ -1,3 +1,10 @@
+$base: #0f1923;
+$white: #ece8e1;
+$pink: #ff4655;
+$blue: #adefd1ff;
+$brown: #755139ff;
+$height: 54px;
+
 * {
   box-sizing: border-box;
   ::selection {
@@ -106,51 +113,6 @@ a {
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .purple {
   color: #755139ff;
 }
@@ -351,7 +313,7 @@ nav .nav-links ul li img {
     height: 250px;
 
     border-radius: 50%;
-    background-image: url("https://silviadiaconescu.com/work/landscape/pb-2.jpg");
+    background-image: url("images/pfp.jpg");
     background-size: cover;
     transition: ease-in-out 0.3s;
 
@@ -401,6 +363,8 @@ nav .nav-links ul li img {
       border-radius: 0;
       width: 450px;
       height: 310px;
+      border: 10px solid $blue;
+      border-radius: 20px;
 
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
         0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1),
@@ -433,5 +397,113 @@ nav .nav-links ul li img {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+$transition: 0.3s ease-out all;
+
+#cv-div {
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  & a {
+    width: 100%;
+    max-width: 240px;
+    height: $height;
+    padding: 8px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: $pink;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px inset rgba($brown, 0.3);
+    position: relative;
+    margin: 10px 0;
+    &.white:hover > p {
+      color: $base;
+    }
+    &.white > p {
+      background: $brown;
+      color: $white;
+      & span.base {
+        border: 1px solid transparent;
+      }
+    }
+
+    &:before {
+      right: 0;
+      left: initial;
+    }
+    & p {
+      margin: 0;
+      height: $height;
+      line-height: $height;
+      box-sizing: border-box;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      & span.base {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border: 1px solid $pink;
+        &:before {
+          content: "";
+          width: 2px;
+          height: 2px;
+          left: -1px;
+          top: -1px;
+          background: $base;
+          position: absolute;
+          transition: $transition;
+        }
+      }
+      & span.bg {
+        left: -5%;
+        position: absolute;
+        background: $blue;
+        width: 0;
+        height: 100%;
+        z-index: 3;
+        transition: $transition;
+        transform: skewX(-10deg);
+      }
+      & span.text {
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        &:after {
+          content: "";
+          width: 4px;
+          height: 4px;
+          right: 0;
+          bottom: 0;
+          background: $base;
+          position: absolute;
+          transition: $transition;
+          z-index: 5;
+        }
+      }
+    }
+    &:hover {
+      color: $white;
+      & span.bg {
+        width: 110%;
+      }
+      & span.text:after {
+        background: $white;
+      }
+    }
   }
 }
