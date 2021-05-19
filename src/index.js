@@ -47,6 +47,7 @@ class App extends React.Component {
 
                         <div className="layer" id="layer6">
                             <img src="../images/triangle-mountain-bg.svg"/>
+                            <div class='icon-scroll'/>
                         </div>
                     </div>
 
