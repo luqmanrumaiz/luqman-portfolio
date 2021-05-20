@@ -39,6 +39,42 @@ class App extends React.Component {
 
                 <div id="background">
 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#adefd1ff" version="1.1" class="svg" width='100' height='100'>
+                        <path d="M 50,10 90,90 10,90 z"/>
+                    </svg>
+
                     <div className="parallax">
 
                         <div className="layer" id="layer1">
