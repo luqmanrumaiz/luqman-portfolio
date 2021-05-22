@@ -56,7 +56,7 @@ class App extends React.Component {
         <div id="background">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -67,7 +67,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -78,7 +78,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -89,7 +89,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -100,7 +100,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -111,7 +111,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -122,7 +122,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -133,7 +133,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -144,7 +144,7 @@ class App extends React.Component {
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="#f27405"
+            fill="#00f29c"
             version="1.1"
             class="svg"
             width="100"
@@ -169,19 +169,19 @@ class App extends React.Component {
 
           <div className="content">
             <div>
-              <h2 class="divider line glow">
-                About-<span className="purple"> Me</span>
-              </h2>
-
-              <div class="container">
-                <div class="container__image">
-                  <div class="container__info">
-                    <p>
-                      Hi! I'm Luqman Rumaiz a 17 year old Computer Science
-                      Undergraduate at the University of Westminster. I live in
-                      Colombo and aspire to be a Full Stack. Oh and I know a bit
-                      of Machine Learning :){" "}
-                    </p>
+              <div class="about-section">
+                <div class="inner-container">
+                  <h1>About Me</h1>
+                  <p class="about-text">
+                    Hi! I'm Luqman Rumaiz a 17 year old Computer Science
+                    Undergraduate at the University of Westminster. I live in
+                    Colombo and aspire to be a Full Stack. Oh and I know a bit
+                    of Machine Learning :)
+                  </p>
+                  <div class="skills">
+                    <span>Full Stack Dev</span>
+                    <span>Gamer</span>
+                    <span>Data Science Enthusiast</span>
                   </div>
                 </div>
               </div>
@@ -203,11 +203,12 @@ class App extends React.Component {
               </h2>
               <div class="container1">
                 <iframe
+                  src="https://my.spline.design/untitled-a8dbe4e4429352d2d4970f3155561c19/"
                   class="responsive-iframe"
-                  src="https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/"
-                />
+                ></iframe>
               </div>
             </div>
+
             <footer class="footer-distributed">
               <div class="footer-left">
                 <h3>
