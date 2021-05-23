@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
+import Parallax from "parallax-js";
 
 class App extends React.Component {
   render() {
@@ -169,10 +170,10 @@ class App extends React.Component {
 
           <div className="content">
             <div>
-              <div class="about-section">
-                <div class="inner-container">
+              <div class="about-section" id="scene">
+                <div data-depth="0.2" class="inner-container">
                   <h1>About Me</h1>
-                  <p class="about-text">
+                  <p data-depth="0.6" class="about-text">
                     Hi! I'm Luqman Rumaiz a 17 year old Computer Science
                     Undergraduate at the University of Westminster. I live in
                     Colombo and aspire to be a Full Stack. Oh and I know a bit
@@ -187,25 +188,13 @@ class App extends React.Component {
               </div>
 
               <div class="button">
-                <a class="white" href="#">
+                <a class="white" href="../documents/CV.pdf" target="_blank">
                   <p>
                     <span class="bg"></span>
                     <span class="base"></span>
                     <span class="text">Download CV</span>
                   </p>
                 </a>
-              </div>
-            </div>
-
-            <div>
-              <h2 class="divider line glow top-margin">
-                Skills-<span className="purple"> Technologies</span>
-              </h2>
-              <div class="container1">
-                <iframe
-                  src="https://my.spline.design/untitled-a8dbe4e4429352d2d4970f3155561c19/"
-                  class="responsive-iframe"
-                ></iframe>
               </div>
             </div>
 
@@ -279,3 +268,6 @@ class App extends React.Component {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+
+var scene = document.getElementById("scene");
+var parallaxInstance = new Parallax(scene);
