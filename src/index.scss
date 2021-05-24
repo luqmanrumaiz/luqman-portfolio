@@ -180,6 +180,8 @@ nav .nav-links ul li img {
   clear: both;
   display: inline-block;
   mix-blend-mode: difference;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #innernav {

@@ -16,18 +16,8 @@ class App extends React.Component {
           <div className="nav-links">
             <ul>
               <li>
-                <a href="https://github.com/luqmanrumaiz" target="_blank">
-                  <img src="../images/github.svg" alt="Github-Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/in/luqmanrumaiz/" target="_blank">
-                  <img src="../images/behance.svg" alt="Behance-Icon" />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/luqmanrumaiz1" target="_blank">
-                  <img src="../images/twitter.svg" alt="Twitter-Icon" />
+                <a href="https://solo.to/luqmanrumaiz" target="_blank">
+                  <img src="../images/solo.svg" alt="Github-Icon" />
                 </a>
               </li>
             </ul>
