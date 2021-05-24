@@ -217,56 +217,92 @@ class App extends React.Component {
 
               <div class="portfolio__container bd-grid">
                 <div class="portfolio__img">
-                  <img src="../images/work1.jpg" alt="" />
-
+                  <img src="../images/work1.png" alt="" />
                   <div class="portfolio__link">
-                    <a href="#" class="portfolio__link-name">
-                      View details
+                    <a class="portfolio__link-name">
+                      ONCO - an Open Source mobile platform that specializes in
+                      the diagnosis and prognosis of Skin, Lung, and Breast
+                      Cancer, utilizing deep convolutional neural networks for
+                      diagnosis, and machine learning and risk models for
+                      prognosis. The main aim is to bridge the gap between many
+                      mediocre and unreliable diagnosis and prognosis
+                      applications, while at the same time making it more
+                      enhanced and effective
+                      <br />
+                      <br /> Flutter, Firebase, Flask, Azure, OpenCV, Heroku,
+                      TensorFlow | Keras | Sci-kit Learn | NLTK, Python
                     </a>
                   </div>
                 </div>
                 <div class="portfolio__img">
-                  <img src="../images/work2.jpg" alt="" />
+                  <img src="../images/work2.png" alt="" />
 
                   <div class="portfolio__link">
                     <a href="#" class="portfolio__link-name">
-                      View details
+                      Train Ticket Booking System – Complete Application for
+                      Employees and Customers that with various features that
+                      helps for a smooth running of a Train Station
+                      <br />
+                      <br />
+                      Java, JavaFX, MongoDB
                     </a>
                   </div>
                 </div>
                 <div class="portfolio__img">
-                  <img src="../images/work3.jpg" alt="" />
+                  <img src="../images/work3.png" alt="" />
 
                   <div class="portfolio__link">
                     <a href="#" class="portfolio__link-name">
-                      View details
+                      Premier League Manager - Web and GUI Application that
+                      gives Managers the ability to manage their English
+                      Football League.
+                      <br />
+                      <br />
+                      Angular, Playframework, Java, JavaFX
                     </a>
                   </div>
                 </div>
                 <div class="portfolio__img">
-                  <img src="../images/work4.jpg" alt="" />
+                  <img src="../images/work4.png" alt="" />
 
                   <div class="portfolio__link">
                     <a href="#" class="portfolio__link-name">
-                      View details
+                      Network Flow Application - GUI Applicaiton that calculates
+                      and shows the User the optimal Paths taken to push Flow
+                      from a Source to a Target along with other handy features
+                      like Inserting, Editing & Deleting Edges and Visualizing
+                      the Graph
+                      <br />
+                      <br />
+                      Java, JavaFX
                     </a>
                   </div>
                 </div>
                 <div class="portfolio__img">
-                  <img src="../images/work5.jpg" alt="" />
+                  <img src="../images/work5.png" alt="" />
 
                   <div class="portfolio__link">
                     <a href="#" class="portfolio__link-name">
-                      View details
+                      Car Quiz Game - Mobile Application that entertains the
+                      User with 4 Different Quiz Modes along with the option for
+                      a Timer in each
+                      <br />
+                      <br />
+                      Android
                     </a>
                   </div>
                 </div>
                 <div class="portfolio__img">
-                  <img src="../images/work6.jpg" alt="" />
+                  <img src="../images/work6.png" alt="" />
 
                   <div class="portfolio__link">
                     <a href="#" class="portfolio__link-name">
-                      View details
+                      Cinema Application – Mobile Application that allows Users
+                      to Add, Edit, Delete, Favorite, Search Movies and View
+                      Ratings for a Movie
+                      <br />
+                      <br />
+                      Android SQLite
                     </a>
                   </div>
                 </div>

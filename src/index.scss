@@ -938,6 +938,8 @@ img {
   }
 
   &__link {
+    padding: 0 2% 0 2%;
+    font-size: 10px;
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -945,14 +947,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(253, 232, 232, 0.589);
     border-radius: 0.5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: 0.3s;
 
     &-name {
-      color: var(--dark-color);
+      color: $base;
     }
   }
 }
