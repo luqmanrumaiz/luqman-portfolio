@@ -160,6 +160,9 @@ nav .nav-links ul {
 nav .nav-links ul li {
   padding: 10px;
   list-style: none;
+  &:hover {
+    animation: flash 2s infinite;
+  }
 }
 
 nav .nav-links ul li img {
@@ -412,7 +415,6 @@ $transition: 0.3s ease-out all;
     text-decoration: none;
     box-shadow: 0 0 0 1px inset rgba($brown, 0.3);
     position: relative;
-    margin: 10px 0;
     &.white > p {
       background: $darker-white;
       color: $base;
@@ -863,22 +865,6 @@ textarea {
   }
 }
 
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
-
-/*===== VARIABLES CSS =====*/
-:root {
-  --header-height: 3rem;
-  --font-medium: 500;
-}
-/*===== Colores =====*/
-:root {
-  --first-color: #5361ff;
-  --white-color: #fafaff;
-  --dark-color: #2a3b47;
-  --text-color: #697477;
-}
-
 h1,
 h2,
 p {
@@ -912,6 +898,26 @@ img {
 
 /* ===== PORTFOLIO =====*/
 .portfolio {
+  h1 {
+    font-size: 25px;
+    background: linear-gradient(
+      to right,
+      $darker-white 20%,
+      $blue 40%,
+      $blue 60%,
+      $darker-white 80%
+    );
+    background-size: 200% auto;
+
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    margin-bottom: 2%;
+  }
+
   &__container {
     justify-items: center;
     row-gap: 2rem;
@@ -951,7 +957,6 @@ img {
 
 @media screen and(min-width: 768px) {
   body {
-    margin: 0;
   }
   .section {
     padding-top: 4rem;

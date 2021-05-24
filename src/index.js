@@ -16,13 +16,19 @@ class App extends React.Component {
           <div className="nav-links">
             <ul>
               <li>
-                <img src="../images/github.svg" alt="" />
+                <a href="https://github.com/luqmanrumaiz" target="_blank">
+                  <img src="../images/github.svg" alt="Github-Icon" />
+                </a>
               </li>
               <li>
-                <img src="../images/behance.svg" alt="" />
+                <a href="https://linkedin.com/in/luqmanrumaiz/" target="_blank">
+                  <img src="../images/behance.svg" alt="Behance-Icon" />
+                </a>
               </li>
               <li>
-                <img src="../images/twitter.svg" alt="" />
+                <a href="https://twitter.com/luqmanrumaiz1" target="_blank">
+                  <img src="../images/twitter.svg" alt="Twitter-Icon" />
+                </a>
               </li>
             </ul>
           </div>
@@ -177,7 +183,7 @@ class App extends React.Component {
           </div>
 
           <div className="content">
-            <div>
+            <div id="about">
               <div class="about-section" id="scene">
                 <div data-depth="0.2" class="inner-container">
                   <h1>About Me</h1>
@@ -217,7 +223,7 @@ class App extends React.Component {
             </div>
 
             <section class="portfolio section" id="portfolio">
-              <h1 class="section-title">Portfolio</h1>
+              <h1>Portfolio</h1>
 
               <div class="portfolio__container bd-grid">
                 <div class="portfolio__img">
