@@ -169,21 +169,6 @@ nav .nav-links ul li img {
   transform: scale(0.45);
 }
 
-.sidenav {
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  clear: both;
-  display: inline-block;
-  mix-blend-mode: difference;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 #innernav {
   margin: 0;
   position: absolute;
@@ -192,17 +177,58 @@ nav .nav-links ul li img {
   transform: translateY(-50%);
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #cbcbcb;
-  display: block;
-  transition: 0.5s;
+/* styling sidebar */
+.sidehoverbar {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  clear: both;
+  display: inline-block;
+  mix-blend-mode: difference;
+
+  a {
+    background-color: grey;
+    position: absolute;
+    font-size: 12px;
+    color: $base;
+    padding: 10px;
+    border-radius: 0px 25px 25px 0px;
+    left: -190px;
+    transition: 0.5s;
+    opacity: 0.5;
+  }
 }
 
-.sidenav a:hover {
-  font-size: 50px;
+.side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  mix-blend-mode: difference;
+
+  a {
+    font-size: 10px;
+    color: $blue;
+    display: block;
+    width: 120px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 7px;
+    margin-left: -100px;
+    border-radius: 20px;
+    transition: 0.6s all;
+
+    &:hover {
+      margin-left: 0;
+    }
+
+    i {
+      float: right;
+    }
+  }
 }
 
 @keyframes flicker {
@@ -230,11 +256,12 @@ nav .nav-links ul li img {
 
 .skills-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 45.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
   border: 5px solid $blue;
+  margin: 2% 0 5% 0;
 }
 
 iframe {
@@ -509,38 +536,58 @@ $transition: 0.3s ease-out all;
 }
 .icon-scroll {
   filter: drop-shadow(0px 0px 10px $blue);
+  width: 20px;
+  height: 40px;
+  margin-left: -18px;
+  top: 90%;
+  margin-top: -30px;
+  border: 2px solid $blue;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  @media only screen and (min-width: 768px) {
+    border: 1px solid $blue;
+    border-radius: 18px;
+  }
 
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  top: 80%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px $blue;
-  border-radius: 25px;
   &:before {
     filter: drop-shadow(0px 0px 10px $blue);
     content: "";
-    width: 8px;
-    height: 8px;
-    background: $blue;
-    margin-left: -4px;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    margin-left: -3px;
     top: 8px;
-    border-radius: 4px;
-    animation-duration: 1.5s;
+    border-radius: 3px;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
     animation-name: scroll;
+    @media only screen and (min-width: 768px) {
+      width: 4px;
+      height: 4px;
+      margin-left: -2px;
+      border-radius: 2px;
+      animation-name: scroll2;
+    }
   }
 }
 
 @keyframes scroll {
-  from {
-    top: 5px;
-  }
-  to {
-    top: 18px;
+  0% {
+    transform: translateY(24px);
+    opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(24px);
   }
 }
 
@@ -764,6 +811,10 @@ textarea {
   margin: 7% 7% 0 7%;
 }
 
+#about {
+  padding: 5%;
+}
+
 .inner-container {
   width: 55%;
   float: right;
@@ -896,6 +947,8 @@ img {
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== PORTFOLIO =====*/
@@ -981,12 +1034,5 @@ img {
       grid-template-rows: repeat(2, 1fr);
       column-gap: 2rem;
     }
-  }
-}
-
-@media screen and(min-width: 1024px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
   }
 }

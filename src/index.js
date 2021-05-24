@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import Parallax from "parallax-js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 class App extends React.Component {
   render() {
@@ -23,40 +25,6 @@ class App extends React.Component {
             </ul>
           </div>
         </nav>
-        <div className="sidenav">
-          <div id="innernav">
-            <a
-              onClick={() =>
-                // Scroll to a certain element
-                document.querySelector(".parallax").scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-            >
-              _
-            </a>
-            <a
-              onClick={() =>
-                // Scroll to a certain element
-                document.querySelector(".about-content").scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-            >
-              _
-            </a>
-            <a
-              onClick={() =>
-                // Scroll to a certain element
-                document.querySelector(".wrapper").scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-            >
-              _
-            </a>
-          </div>
-        </div>
 
         <div id="background">
           <svg
@@ -174,14 +142,28 @@ class App extends React.Component {
 
           <div className="content">
             <div id="about">
-              <div class="about-section" id="scene">
-                <div data-depth="0.2" class="inner-container">
+              <div class="about-section">
+                <div class="inner-container">
                   <h1>About Me</h1>
-                  <p data-depth="0.6" class="about-text">
+                  <p class="about-text">
                     Hi! I'm Luqman Rumaiz a 17 year old Computer Science
                     Undergraduate at the University of Westminster. I live in
                     Colombo and aspire to be a Full Stack. Oh and I know a bit
                     of Machine Learning :)
+                    <br />
+                    <div class="button">
+                      <a
+                        class="white"
+                        href="../documents/CV.pdf"
+                        target="_blank"
+                      >
+                        <p>
+                          <span class="bg"></span>
+                          <span class="base"></span>
+                          <span class="text">Download CV</span>
+                        </p>
+                      </a>
+                    </div>
                   </p>
                   <div class="skills">
                     <span>Full Stack Dev</span>
@@ -189,16 +171,6 @@ class App extends React.Component {
                     <span>Data Science Enthusiast</span>
                   </div>
                 </div>
-              </div>
-
-              <div class="button">
-                <a class="white" href="../documents/CV.pdf" target="_blank">
-                  <p>
-                    <span class="bg"></span>
-                    <span class="base"></span>
-                    <span class="text">Download CV</span>
-                  </p>
-                </a>
               </div>
             </div>
 
@@ -325,19 +297,16 @@ class App extends React.Component {
 
               <div class="footer-center">
                 <div>
-                  <i class="fa fa-map-marker"></i>
                   <p>
                     <span>Nugegoda</span> Colombo, Sri Lanka
                   </p>
                 </div>
 
                 <div>
-                  <i class="fa fa-phone"></i>
                   <p>+0000000000</p>
                 </div>
 
                 <div>
-                  <i class="fa fa-envelope"></i>
                   <p>
                     <a href="mailto:luqman.rumaiz@gmail.com">
                       luqman.rumaiz@gmail.com
@@ -355,7 +324,7 @@ class App extends React.Component {
                     <textarea
                       id="subject"
                       name="subject"
-                      placeholder="Hey.."
+                      placeholder="Hey Luqman.."
                     ></textarea>
                     <div class="button" id="send-email">
                       <a class="white" href="#">
@@ -372,6 +341,21 @@ class App extends React.Component {
             </footer>
           </div>
         </div>
+
+        <div class="side">
+          <a href="#">
+            About <i class="fas fa-address-card"></i>
+          </a>
+          <a href="#">
+            Skills <i class="fas fa-brain"></i>
+          </a>
+          <a href="#">
+            Projects <i class="fas fa-project-diagram"></i>
+          </a>
+          <a href="#">
+            Contact <i class="far fa-address-book"></i>
+          </a>
+        </div>
       </div>
     );
   }
@@ -379,6 +363,3 @@ class App extends React.Component {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-
-var scene = document.getElementById("scene");
-var parallaxInstance = new Parallax(scene);
