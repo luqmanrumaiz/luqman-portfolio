@@ -42,15 +42,23 @@ class App extends React.Component {
             <a
               onClick={() =>
                 // Scroll to a certain element
-                document.querySelector(".content").scrollIntoView({
+                document.querySelector(".about-content").scrollIntoView({
                   behavior: "smooth",
                 })
               }
             >
               _
             </a>
-            <a href=".parallax">_</a>
-            <a>_</a>
+            <a
+              onClick={() =>
+                // Scroll to a certain element
+                document.querySelector(".wrapper").scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
+              _
+            </a>
           </div>
         </div>
 
@@ -197,6 +205,77 @@ class App extends React.Component {
                 </a>
               </div>
             </div>
+
+            <div class="wrapper">
+              <h1>Skills</h1>
+              <div class="skills-container">
+                <iframe
+                  src="https://my.spline.design/librarydevicemodel-44951d33158b65702b731f73fa0c649b/"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+
+            <section class="portfolio section" id="portfolio">
+              <h1 class="section-title">Portfolio</h1>
+
+              <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                  <img src="../images/work1.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="../images/work2.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="../images/work3.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="../images/work4.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="../images/work5.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio__img">
+                  <img src="../images/work6.jpg" alt="" />
+
+                  <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">
+                      View details
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             <footer class="footer-distributed">
               <div class="footer-left">
